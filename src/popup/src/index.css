@@ -1,0 +1,142 @@
+body {
+  background: #2b2f32; /* dark - #2b2f32 | light - #F8F8F8*/
+  font-family: 'Roboto', sans-serif;
+  /* transition: 333ms ease; */
+  scroll-behavior: smooth;
+  width: 563px;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  margin: 10px;
+}
+
+.overview {
+  margin-bottom: 16px;
+}
+
+.panel-padding {
+  padding: 8px 18px 8px 18px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.cookie-form {
+  padding: 20px;
+}
+
+.search-bar {
+  margin: -5px 0 -20px 0;
+  width: 100%;
+}
+
+.checkbox-color {
+  color: white;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 10px 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.589);
+}
+
+.search-res {
+  margin: 7px 0 20px 0;
+}
+
+.no-cookies-img {
+  animation: cookies-logo infinite 20s linear;
+  height: 128px;
+  pointer-events: none;
+}
+
+.img-wrapper {
+  margin: 20px 0 20px 0;
+}
+
+@keyframes cookies-logo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.no-cookies-typo {
+  margin-bottom: 24px;
+}
+
+.opacity-50 {
+  opacity: 50%;
+}
+
+.cookie-list-item {
+  width: 100%;
+  margin: 3px 0 3px 0;
+}
+
+.badge {
+  padding: 4px 10px 4px 10px;
+  border-radius: 10px;
+  background-color: #3f51b5;
+  margin: 0 0 0 7px;
+}
+
+.badge-warning {
+  background-color: #683081;
+}
+
+.cookie-item-session {
+  padding: 1px 10px 1px 10px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #683081;
+  margin: 0 0 0 2px;
+}
+
+.badge-wrapper {
+  margin-top: -17px;
+}
+
+.group-current-url-header {
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.cookie-edit-btn {
+  margin: 16px 0 0 10px;
+  height: 25px;
+}
+
+/* Animations */
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-leave {
+  opacity: 1;
+}
+
+.fade-leave.fade-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-appear {
+  opacity: 0.01;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}

@@ -1,0 +1,15 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "sourceMap": false,
+    "types": ["@types/chrome", "node"],
+    "typeRoots": ["node_modules/@types"],
+    "moduleResolution": "node",
+    "lib": ["es2017", "dom"],
+    "baseUrl": "src/popup/src"
+  },
+  "exclude": ["*.d.ts", "node_modules", "dist", "build"],
+  "include": ["src/background", "src/contentscript"]
+}

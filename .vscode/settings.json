@@ -1,0 +1,15 @@
+{
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#23b5cf",
+    "statusBarItem.hoverBackground": "#1c8fa3",
+    "statusBar.foreground": "#15202b"
+  },
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "files.insertFinalNewline": true,
+  "peacock.color": "#23b5cf",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
