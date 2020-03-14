@@ -28,4 +28,6 @@
 ## 📝 License
 
 Copyright © 2019 [Radovan Pelka](https://github.com/RadovanPelka).<br />
-This project is [GNU](https://github.com/RadovanPelka/Easy-Cookie-Editor/blob/master/LICENSE) licensed.
+This project is [GNU](https://github.com/RadovanPelka/Easy-Cookie-Editor/blob/master/LICENSE) licensed.<br />
+[Privacy Policy](https://github.com/RadovanPelka/Easy-Cookie-Editor/blob/master/privacy-policy.md)
+
