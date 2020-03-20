@@ -66,6 +66,15 @@ export const calculateOneCookieSize = (
   return size;
 };
 
+export const getCurrentDomainFromUrl = (url: string | null | undefined) => {
+  if (!url) return '';
+
+  const parsedDomainUrl = parseDomain(url);
+  if (!parsedDomainUrl) return '';
+
+  return [parsedDomainUrl.domain, parsedDomainUrl.tld].join('.');
+};
+
 export const getCurrentUrlFromTab = (fullUrl: string | undefined | null) => {
   if (R.isEmpty(fullUrl) || R.isNil(fullUrl)) {
     return null;

@@ -40,8 +40,11 @@ export const useDomainStyles = makeStyles((theme: Theme) =>
       alignItems: 'center',
       backgroundColor: 'rgba(43, 47, 50, 0.55)',
     },
-    column: {
-      flexBasis: '40%',
+    columnPrimary: {
+      flexBasis: '50%',
+    },
+    columnSecondary: {
+      flexBasis: '16%',
     },
     helper: {
       borderLeft: `2px solid ${theme.palette.divider}`,

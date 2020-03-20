@@ -30,30 +30,32 @@ const DomainDetails = ({
 
   return (
     <Grid container spacing={0}>
-      <div className="search-bar">
-        <Grid item>
-          <TextField
-            label="Search"
-            margin="dense"
-            fullWidth
-            onChange={e => setSearch(toLower(e.target.value))}
-          />
-          <div className="search-res">
-            {filteredCookies.length === 0 ? (
-              <span>No Cookies</span>
-            ) : (
-              <span>
-                <span>{filteredCookies.length}</span>
-                <span className="opacity-50">
-                  {' '}
-                  {filteredCookies.length === 1 ? 'cookie' : 'cookies'}
+      {!(cookies.length === 1) && (
+        <div className="search-bar">
+          <Grid item>
+            <TextField
+              label="Search"
+              margin="dense"
+              fullWidth
+              onChange={e => setSearch(toLower(e.target.value))}
+            />
+            <div className="search-res">
+              {filteredCookies.length === 0 ? (
+                <span>No Cookies</span>
+              ) : (
+                <span>
+                  <span>{filteredCookies.length}</span>
+                  <span className="opacity-50">
+                    {' '}
+                    {filteredCookies.length === 1 ? 'cookie' : 'cookies'}
+                  </span>
                 </span>
-              </span>
-            )}
-          </div>
-        </Grid>
-      </div>
-      {!isEmpty(mappedCookies) && <Divider />}
+              )}
+            </div>
+          </Grid>
+        </div>
+      )}
+      {!isEmpty(mappedCookies) && !(cookies.length === 1) && <Divider />}
       {mappedCookies}
     </Grid>
   );

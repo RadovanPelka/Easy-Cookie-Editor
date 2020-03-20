@@ -44,22 +44,28 @@ const Domains: React.FC<DomainsProps> = ({
             TransitionProps={{ unmountOnExit: true }}
           >
             <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-              <div className={classes.column}>
+              <div className={classes.columnPrimary}>
                 <Typography className={classes.heading}>
                   {cookie.domain}
                 </Typography>
               </div>
               {totalCookies !== 0 && (
-                <div className={classes.column}>
-                  <Typography className={classes.secondaryHeading}>
-                    {totalCookies === 1
-                      ? `${totalCookies} cookie`
-                      : `${totalCookies} cookies`}{' '}
-                    <span className={classes.secondaryHeadingSize}>
-                      ( {cookie.formatedSize} )
-                    </span>
-                  </Typography>
-                </div>
+                <>
+                  <div className={classes.columnSecondary}>
+                    <Typography className={classes.secondaryHeading}>
+                      {totalCookies === 1
+                        ? `${totalCookies} cookie`
+                        : `${totalCookies} cookies`}{' '}
+                    </Typography>
+                  </div>
+                  <div className={classes.columnSecondary}>
+                    <Typography className={classes.secondaryHeading}>
+                      <span className={classes.secondaryHeadingSize}>
+                        ( {cookie.formatedSize} )
+                      </span>
+                    </Typography>
+                  </div>
+                </>
               )}
             </ExpansionPanelSummary>
             <ExpansionPanelDetails className={classes.details}>
