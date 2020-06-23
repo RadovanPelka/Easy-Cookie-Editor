@@ -1,6 +1,6 @@
 <h1>Privacy Policy</h1>
 
-<p>Last updated: March 13, 2020</p>
+<p>Last updated: June 23, 2020</p>
 
 
 <p>
